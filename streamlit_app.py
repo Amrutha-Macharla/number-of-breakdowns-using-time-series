@@ -12,14 +12,14 @@ st.title("Prediction of mamber of Breakdowns with ARIMA Mode1")
 
 
 st.header("How many days you want to forecast?")
-P = st.number_input("days", min_value=0, max_value=365, step=1)
+p = st.number_input("days", min_value=0, max_value=365, step=1)
 col1, col2 = st.columns(2)
 # Generate predictions based on user input
 if st.button ("Generate Predictions"):
 #Perform prediction using the ARIMA model
 #fig, axes = plt. subplots()
     with col1:
-        st-pyplot (plot_predict (model_fit, 1, 3290+p))
+        st.pyplot (plot_predict (model_fit, 1, 3290+p))
     with col2:
         st.header("Predictions")
         if p==0:
